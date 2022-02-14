@@ -79,3 +79,11 @@
     height: 100vh;
     z-index: 1000;
 }
+@media (max-width:768px) {
+    .inpBox img{
+        text-align: center;
+        margin: auto;
+        text-align: center;
+        margin-left: 15%;
+    }
+}
