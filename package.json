@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
+  "homepage": "https://Raymond-techy.github.io/text-to-speech",
   "keywords": [],
   "dependencies": {
     "gh-pages": "^3.2.3"
