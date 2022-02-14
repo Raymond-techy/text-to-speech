@@ -1,0 +1,81 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #141414;
+}
+.inpBox{
+    position: relative;
+    top: 50px;
+    /* margin-top: 150px; */
+    margin: auto;
+    width: 500px;
+}
+.inpBox img{
+    text-align: center;
+    margin: auto;
+    margin-left: 30%;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    color: azure;
+}
+.flex>div{
+    margin-bottom: 10px;
+}
+.flex label{
+    margin-left: 50%;
+}
+.rating{
+    display: flex;
+}
+.rating p{
+    margin-left: 40%;
+    font-size: small;
+    background: blue;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 50%;
+    visibility: hidden;
+}
+.voices{
+    background: #fff;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+.txtInput{
+    background: #fff;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+.autoRange{
+    width: 100%;
+    background: #fff;
+    color: #fff;
+}
+.subTxt{
+    background: #fff;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.subTxt:hover{
+    opacity: 0.5;
+}
+#preloader{
+	background: #222222 url(./image/new-preloader.gif) no-repeat center center;
+    background-size: 30%;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Text-to-Speech</title>
+</head>
+<body>
+    <div id="preloader">
+        
+    </div>
+    <div class="inpBox">
+        <div>
+            <img src="./img/speech.png" alt="">
+        </div>
+        <div class="flex">
+            <form action="">
+            <div >
+                <textarea class="txtInput"placeholder="Type in your text"></textarea>
+            </div>
+            <div>
+                <div class="rating">
+                <label for="">Rate</label>
+                <p id="rate-value"></p>
+                </div>
+                <input type="range" placeholder="rate" class="autoRange" min="0.5" max="2.0" value="1" step="0.1" id="rate">
+            </div>
+            <div>
+    
+                <div class="rating">
+                    <label for="">Pitch</label>
+                    <p id="pitch-value"></p>
+                </div>
+                <input type="range" placeholder="pitch" class="autoRange" min="0" max="2.0" value="1" step="0.1" id="pitch">
+            </div>
+            <div>
+                <select id="voice-select" class="voices"></select>
+            </div>
+            <div>
+                <button class="subTxt">Speak It</button>
+            </div>
+        </form>
+        </div>
+    </div>
+    <script>
+        var loader=document.getElementById('preloader');
+        window.addEventListener('load',function(){
+          setTimeout(30000);
+          loader.style.display="none"
+        })
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
